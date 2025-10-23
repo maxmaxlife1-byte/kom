@@ -4,9 +4,9 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, ContextTypes
 
 # Your environment variables
-TELEGRAM_TOKEN = os.environ["8461561248:AAFgRDOILo9qbAo_5-lrWtk7HO-jWKhGjHI"]
-RUNPOD_ENDPOINT = os.environ["https://api.runpod.ai/v2/i27a1zu1ovj342/runsync"]
-RUNPOD_KEY = os.environ["rpa_S152C36PPYAUHEP9GW3B4LL1BXVW917WOJ8POX091ekl6q"]
+TELEGRAM_TOKEN = os.environ["TELEGRAM_TOKEN"]
+RUNPOD_ENDPOINT = os.environ["RUNPOD_ENDPOINT"]
+RUNPOD_KEY = os.environ["RUNPOD_KEY"]
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Sends a welcome message when the /start command is issued."""
